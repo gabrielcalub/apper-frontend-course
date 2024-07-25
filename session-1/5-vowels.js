@@ -1,6 +1,5 @@
 function convertToVowels(word) {
-    const vowels = 'aeiouAEIOU'; // Define an array of vowels (both lowercase and uppercase)
-    let result = '';
+    const vowels = 'aeiouAEIOU'; // Define an array of vowels
   
     for (let i = 0; i < word.length; i++) {
       if (vowels.includes(word[i])) { // Check if the current character is a vowel
@@ -11,7 +10,7 @@ function convertToVowels(word) {
     return result;
   }
   
-  // Example usage:
+  
   const word = 'thisissomeword';
   const wordWithOnlyVowels = convertToVowels(word);
   console.log(wordWithOnlyVowels); // Output: 'iioeo'

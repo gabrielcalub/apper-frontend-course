@@ -1,13 +1,13 @@
 function reverse(word) {
     let reversed = '';
-    // Iterate backwards through the input string
-    for (let i = word.length - 1; i >= 0; i--) {
-      reversed += word[i]; // Build the reversed string character by character
+    
+    for (let i = word.length - 1; i >= 0; i--) { // Iterate backwards
+      reversed += word[i];
     }
     return reversed;
   }
   
-  // Example usage:
+
   const word = 'hello';
   const reversedWord = reverse(word);
   console.log(reversedWord); // Output: 'olleh'

@@ -7,8 +7,7 @@ class Stack {
     push(value) {
         if (typeof value === 'string') {
             this.items.push(value);
-        } else if (Array.isArray(value)) {
-            // Iterate through the array and push only strings
+        } else if (Array.isArray(value)) { //Accepts an array as an input
             value.forEach(item => {
                 if (typeof item === 'string') {
                     this.items.push(item);
@@ -19,7 +18,7 @@ class Stack {
         }
     }
 
-    // Method that removes and returns the top value from the stack
+    
     pop() {
         if (this.isEmpty()) {
             console.error('Stack is currently empty.');
@@ -28,7 +27,7 @@ class Stack {
         return this.items.pop();
     }
 
-    // Method that checks and prints only string values in the stack
+    // Method that checks and prints
     check() {
         console.log(this.items);
     }
@@ -39,7 +38,7 @@ class Stack {
     }
 }
 
-// Example usage:
+
 const stack = new Stack();
 
 stack.push("Milk")
